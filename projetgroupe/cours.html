@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style2.css">
+  <title>Apprentissage</title>
+</head>
+<body>
+  <!-- Barre de navigation -->
+  <nav>
+    <ul>
+      <li><a href="index.html">ACCUEIL</a></li>
+      <li><a href="cours.html">COURS</a></li>
+      <li><a href="exercice.html">EXERCICES</a></li>
+    </ul>
+  </nav>
+
+
+ <h4>
+    <header>
+      <h1>Espace dédié à l'Apprentissage</h1>
+      <p>Explorez nos cours et développez vos compétences en programmation et modélisation.</p>
+    </header>
+ </h4>
+
+  <br>
+
+  <!-- Présentation des cours -->
+  <section id="cours">
+    <div class="cours-intro">
+      <h2>Nos Cours</h2>
+      <p>Nos cours sont conçus pour vous accompagner pas à pas dans l'apprentissage des bases jusqu'à des concepts avancés :</p>
+      <ul>
+        <li><a href="#algorithme">Apprenez les bases de l'algorithme</a></li>
+        <li><a href="#langage-c">Découvrez le langage C</a></li>
+        <li><a href="#php">Créez des applications dynamiques avec PHP</a></li>
+        <li><a href="#html-css">HTML & CSS pour vos projets web</a></li>
+        <li><a href="#merise">Concevez vos bases de données avec Merise</a></li>
+        <li><a href="#mysql">Apprenez à utiliser MySQL</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <br>
+
+  <!-- Contenu des cours -->
+  <section id="algorithme">
+    <h3>Algorithme</h3>
+  <p>
+    Un algorithme est une suite finie d’instructions précises permettant de résoudre un problème ou d’accomplir une tâche.
+    En informatique, les algorithmes sont essentiels car ils définissent la manière dont un programme doit fonctionner
+    pour produire un résultat attendu.
+  </p>
+
+  <h3>1. Les caractéristiques d’un algorithme</h3>
+  <ul>
+    <li><strong>Être précis :</strong> Les étapes doivent être claires et compréhensibles.</li>
+    <li><strong>Être fini :</strong> Il doit avoir un début et une fin.</li>
+    <li><strong>Être déterministe :</strong> Pour une entrée donnée, il doit produire toujours le même résultat.</li>
+    <li><strong>Être efficace :</strong> Il doit être optimal en termes de temps et de ressources utilisées.</li>
+  </ul>
+
+  <h3>2. Les étapes de création d’un algorithme</h3>
+  <ol>
+    <li><strong>Analyse du problème :</strong> Comprendre le problème à résoudre.</li>
+    <li><strong>Définition des entrées et des sorties :</strong> Identifier les données à fournir (entrées) et ce que doit produire l’algorithme (sorties).</li>
+    <li><strong>Élaboration de la logique :</strong> Décomposer le problème en étapes logiques.</li>
+    <li><strong>Écriture de l’algorithme :</strong> Rédiger l’algorithme en pseudo-code ou en langage naturel.</li>
+  </ol>
+
+  <h3>3. Les structures de base d’un algorithme</h3>
+  <p>Un algorithme repose sur trois types de structures fondamentales :</p>
+
+  <h4>1. Séquence : Exécution linéaire d’instructions</h4>
+  <pre>
+Début
+   Lire A, B
+   Somme ← A + B
+   Afficher Somme
+Fin
+  </pre>
+
+  <h4>2. Condition (Si…Alors) : Permet d’exécuter une action selon une condition</h4>
+  <pre>
+Début
+   Lire N
+   Si N mod 2 = 0 Alors
+      Afficher "Nombre pair"
+   Sinon
+      Afficher "Nombre impair"
+Fin
+  </pre>
+
+  <h4>3. Boucle : Répétition d’une ou plusieurs instructions</h4>
+  <pre>
+Début
+   Somme ← 0
+   Pour i de 1 à 10 Faire
+      Somme ← Somme + i
+   Fin Pour
+   Afficher Somme
+Fin
+  </pre>
+
+  <h3>4. Exemple simple : Tri d’une liste de nombres (Tri à bulles)</h3>
+  <p>
+    Le tri à bulles est un algorithme qui consiste à trier une liste en comparant les éléments adjacents et en les échangeant si nécessaire.
+  </p>
+  <pre>
+Début
+   Pour i de 0 à N-1 Faire
+      Pour j de 0 à N-i-2 Faire
+         Si Liste[j] > Liste[j+1] Alors
+            Échanger Liste[j] et Liste[j+1]
+         Fin Si
+      Fin Pour
+   Fin Pour
+Fin
+  </pre>
+
+  <h3>5. Importance de l’analyse de complexité</h3>
+  <p>
+    La complexité d’un algorithme mesure l’efficacité en termes de temps d’exécution (<strong>complexité temporelle</strong>) 
+    et d’espace mémoire utilisé (<strong>complexité spatiale</strong>).
+    <br>Exemple : Le tri à bulles a une complexité temporelle de <strong>O(n²)</strong> dans le pire des cas.
+  </p>
+
+  <h3>Conclusion</h3>
+  <p>
+    Les algorithmes sont au cœur de l’informatique. Ils permettent de résoudre une multitude de problèmes dans divers domaines
+    comme la science, l’économie, ou encore la médecine. Maîtriser leur conception et leur analyse est une compétence essentielle
+    pour tout informaticien.
+  </p>
+</section>
+
+
+  <section id="langage-c">
+    <h3>Langage C</h3>
+  <p>
+    Le langage C est l’un des langages de programmation les plus populaires et les plus utilisés. 
+    Créé par Dennis Ritchie en 1972, il est connu pour sa simplicité, sa puissance, et sa performance. 
+    Il est souvent utilisé pour développer des systèmes d’exploitation, des logiciels embarqués, et des applications nécessitant un contrôle précis des ressources.
+  </p>
+
+  <h3>1. Pourquoi apprendre le C ?</h3>
+  <ul>
+    <li><strong>Polyvalence :</strong> Le C est utilisé dans divers domaines comme les systèmes d’exploitation, les bases de données et les applications embarquées.</li>
+    <li><strong>Efficacité :</strong> Il permet de créer des programmes performants et optimisés.</li>
+    <li><strong>Base pour d’autres langages :</strong> Beaucoup de langages modernes comme C++, Java et Python sont influencés par le C.</li>
+    <li><strong>Contrôle total :</strong> Permet une gestion fine de la mémoire et des ressources.</li>
+  </ul>
+
+  <h3>2. Structure de base d’un programme en C</h3>
+  <p>Un programme en C est généralement structuré de la manière suivante :</p>
+  <pre>
+#include &lt;stdio.h&gt;
+
+int main() {
+    // Déclaration des variables
+    int a, b, somme;
+
+    // Lecture des entrées
+    printf("Entrez deux nombres : ");
+    scanf("%d %d", &a, &b);
+
+    // Calcul
+    somme = a + b;
+
+    // Affichage du résultat
+    printf("La somme de %d et %d est %d\n", a, b, somme);
+
+    return 0;
+}
+  </pre>
+
+  <h3>3. Principales caractéristiques du langage C</h3>
+  <ul>
+    <li><strong>Langage compilé :</strong> Le code est converti en langage machine à l’aide d’un compilateur.</li>
+    <li><strong>Typage statique :</strong> Les types des variables doivent être définis lors de leur déclaration.</li>
+    <li><strong>Bibliothèques riches :</strong> Fournit un ensemble de bibliothèques standard pour effectuer des tâches courantes.</li>
+    <li><strong>Portabilité :</strong> Les programmes en C peuvent être compilés et exécutés sur plusieurs plateformes.</li>
+  </ul>
+
+  <h3>4. Concepts fondamentaux</h3>
+  <h4>1. Variables et types de données</h4>
+  <p>Les variables permettent de stocker des données. Voici quelques types de base :</p>
+  <ul>
+    <li><strong>int :</strong> Pour les nombres entiers (exemple : <code>int age = 25;</code>).</li>
+    <li><strong>float :</strong> Pour les nombres décimaux (exemple : <code>float pi = 3.14;</code>).</li>
+    <li><strong>char :</strong> Pour les caractères (exemple : <code>char initial = 'A';</code>).</li>
+  </ul>
+
+  <h4>2. Conditions et boucles</h4>
+  <p>
+    Le C permet de contrôler le flux d’exécution à l’aide de structures comme <code>if</code>, <code>for</code>, et <code>while</code>.
+  </p>
+  <pre>
+#include &lt;stdio.h&gt;
+
+int main() {
+    int n;
+
+    printf("Entrez un nombre : ");
+    scanf("%d", &n);
+
+    if (n % 2 == 0) {
+        printf("%d est pair.\n", n);
+    } else {
+        printf("%d est impair.\n", n);
+    }
+
+    return 0;
+}
+  </pre>
+
+  <h4>3. Fonctions</h4>
+  <p>Les fonctions permettent de diviser un programme en modules réutilisables :</p>
+  <pre>
+#include &lt;stdio.h&gt;
+
+// Fonction pour calculer la somme
+int somme(int x, int y) {
+    return x + y;
+}
+
+int main() {
+    int a, b;
+
+    printf("Entrez deux nombres : ");
+    scanf("%d %d", &a, &b);
+
+    printf("La somme est : %d\n", somme(a, b));
+
+    return 0;
+}
+  </pre>
+
+  <h3>5. Importance de la gestion de mémoire</h3>
+  <p>
+    Le C offre un contrôle direct sur la mémoire à l’aide de pointeurs et de fonctions comme <code>malloc</code> et <code>free</code>. 
+    Cela permet d’optimiser l’utilisation des ressources, mais nécessite une gestion rigoureuse pour éviter les erreurs (exemple : fuites de mémoire).
+  </p>
+
+  <h3>Conclusion</h3>
+  <p>
+    Le langage C est une base solide pour tout programmeur. Il offre une combinaison unique de simplicité, de puissance et de flexibilité. 
+    Apprendre le C permet non seulement de mieux comprendre le fonctionnement des ordinateurs, mais aussi de poser les bases pour maîtriser d’autres langages modernes.
+  </p>
+</section>
+
+    <section id="php">
+    <h3>Langage PHP</h3>
+  <p>
+    PHP (Hypertext Preprocessor) est un langage de programmation côté serveur conçu pour développer des applications web dynamiques. 
+    Créé en 1994 par Rasmus Lerdorf, PHP est l’un des langages les plus utilisés pour créer des sites web interactifs et gérer des bases de données.
+  </p>
+
+  <h3>1. Pourquoi utiliser PHP ?</h3>
+  <ul>
+    <li><strong>Facile à apprendre :</strong> PHP est accessible même pour les débutants.</li>
+    <li><strong>Large compatibilité :</strong> Fonctionne avec de nombreux serveurs web (Apache, Nginx) et systèmes d’exploitation.</li>
+    <li><strong>Gestion des bases de données :</strong> PHP offre un support natif pour plusieurs bases de données (MySQL, PostgreSQL, etc.).</li>
+    <li><strong>Communauté active :</strong> Une grande communauté de développeurs, avec de nombreux outils et ressources disponibles.</li>
+    <li><strong>Gratuit :</strong> PHP est open source et ne nécessite aucun coût de licence.</li>
+  </ul>
+
+  <h3>2. Structure de base d’un script PHP</h3>
+  <p>
+    Un script PHP est généralement inséré entre des balises <code>&lt;?php</code> et <code>?&gt;</code>. Voici un exemple simple :
+  </p>
+  <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;Exemple PHP&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;?php
+    // Déclaration d'une variable
+    $nom = "Jean";
+    $age = 25;
+
+    // Affichage
+    echo "Bonjour, je m'appelle $nom et j'ai $age ans.";
+?&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+  </pre>
+
+  <h3>3. Concepts fondamentaux</h3>
+
+  <h4>1. Variables et types</h4>
+  <p>En PHP, une variable commence toujours par le symbole <code>$</code>. Voici quelques exemples :</p>
+  <pre>
+&lt;?php
+    $nom = "Alice"; // Chaîne de caractères
+    $age = 30;      // Entier
+    $prix = 19.99;  // Nombre décimal
+    $actif = true;  // Booléen
+
+    echo "Nom : $nom, Âge : $age, Prix : $prix, Actif : $actif";
+?&gt;
+  </pre>
+
+  <h4>2. Conditions</h4>
+  <p>PHP permet de prendre des décisions à l’aide de structures conditionnelles comme <code>if</code>, <code>else</code>, et <code>elseif</code>.</p>
+  <pre>
+&lt;?php
+    $score = 85;
+
+    if ($score >= 90) {
+        echo "Excellent !";
+    } elseif ($score >= 70) {
+        echo "Bien joué !";
+    } else {
+        echo "Peut mieux faire.";
+    }
+?&gt;
+  </pre>
+
+  <h4>3. Boucles</h4>
+  <p>Les boucles permettent de répéter une action plusieurs fois. Voici un exemple avec une boucle <code>for</code> :</p>
+  <pre>
+&lt;?php
+    for ($i = 1; $i <= 5; $i++) {
+        echo "Itération numéro : $i &lt;br&gt;";
+    }
+?&gt;
+  </pre>
+
+  <h4>4. Fonctions</h4>
+  <p>Les fonctions sont des blocs de code réutilisables. Voici un exemple de fonction simple :</p>
+  <pre>
+&lt;?php
+    // Définition de la fonction
+    function saluer($nom) {
+        return "Bonjour, $nom !";
+    }
+
+    // Utilisation de la fonction
+    echo saluer("Marie");
+?&gt;
+  </pre>
+
+  <h3>4. PHP et les bases de données</h3>
+  <p>
+    PHP est souvent utilisé pour interagir avec des bases de données. Voici un exemple basique de connexion à une base de données MySQL :
+  </p>
+  <pre>
+&lt;?php
+    // Connexion à la base de données
+    $serveur = "localhost";
+    $utilisateur = "root";
+    $motDePasse = "";
+    $baseDeDonnees = "mon_site";
+
+    $connexion = mysqli_connect($serveur, $utilisateur, $motDePasse, $baseDeDonnees);
+
+    if (!$connexion) {
+        die("Connexion échouée : " . mysqli_connect_error());
+    }
+    echo "Connexion réussie !";
+?&gt;
+  </pre>
+
+  <h3>5. Gestion des formulaires avec PHP</h3>
+  <p>
+    PHP est souvent utilisé pour traiter les données soumises par des formulaires HTML. Voici un exemple simple :
+  </p>
+  <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;body&gt;
+
+&lt;form method="post" action="traitement.php"&gt;
+    Nom : &lt;input type="text" name="nom"&gt;&lt;br&gt;
+    Âge : &lt;input type="number" name="age"&gt;&lt;br&gt;
+    &lt;input type="submit" value="Envoyer"&gt;
+&lt;/form&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+  </pre>
+
+  <h3>Conclusion</h3>
+  <p>
+    PHP est un langage puissant et flexible pour développer des applications web. 
+    Il est idéal pour créer des sites dynamiques et interagir avec des bases de données. 
+    Grâce à sa simplicité et à sa popularité, PHP reste un excellent choix pour les débutants et les professionnels.
+  </p>
+</section>
+
+    <section id="html-css">
+    <h3>HTML & CSS</h3>
+
+  <p>
+    HTML (HyperText Markup Language) et CSS (Cascading Style Sheets) sont les technologies fondamentales pour la création de sites web. 
+    Ensemble, elles permettent de structurer, styliser et mettre en page des contenus en ligne.
+  </p>
+
+  <h3>1. Qu'est-ce que HTML ?</h3>
+  <p>
+    HTML est un langage de balisage utilisé pour définir la structure d'une page web. 
+    Il utilise des balises pour organiser le contenu, comme des titres, des paragraphes, des images ou des liens.
+  </p>
+  <p>Voici un exemple de structure HTML simple :</p>
+  <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;Ma Première Page&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Bienvenue sur mon site&lt;/h1&gt;
+    &lt;p&gt;Ceci est un paragraphe.&lt;/p&gt;
+    &lt;a href="https://example.com"&gt;Lien vers un autre site&lt;/a&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+  </pre>
+
+  <h3>2. Qu'est-ce que CSS ?</h3>
+  <p>
+    CSS est utilisé pour styliser les pages HTML. Il permet de contrôler l'apparence des éléments, comme les couleurs, les polices, les espacements, et bien plus.
+  </p>
+  <p>Voici un exemple de CSS simple :</p>
+  <pre>
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+h1 {
+    color: #2c3e50;
+    text-align: center;
+}
+
+a {
+    color: #3498db;
+    text-decoration: none;
+}
+  </pre>
+
+  <h3>3. Structure de base d'un projet HTML & CSS</h3>
+  <p>
+    Un projet web combine généralement un fichier HTML pour la structure et un fichier CSS pour le style. Voici un exemple de projet :
+  </p>
+  <p><strong>Fichier HTML (index.html) :</strong></p>
+  <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;Ma Première Page Web&lt;/title&gt;
+    &lt;link rel="stylesheet" href="style.css"&gt; 
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Bienvenue sur ma page !&lt;/h1&gt;
+    &lt;p&gt;Ceci est une introduction à HTML et CSS.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+  </pre>
+
+  <p><strong>Fichier CSS (style.css) :</strong></p>
+  <pre>
+body {
+    font-family: 'Verdana', sans-serif;
+    margin: 20px;
+    background-color: #eef2f3;
+    color: #333;
+}
+
+h1 {
+    color: #4CAF50;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+p {
+    line-height: 1.6;
+    text-align: justify;
+}
+  </pre>
+
+  <h3>4. Concepts fondamentaux en HTML</h3>
+  <ul>
+    <li><strong>Balises :</strong> Les balises définissent la structure du contenu. Exemple : <code>&lt;p&gt;Paragraphe&lt;/p&gt;</code>.</li>
+    <li><strong>Attributs :</strong> Les balises peuvent avoir des attributs pour fournir des informations supplémentaires. Exemple : <code>&lt;a href="https://example.com"&gt;Lien&lt;/a&gt;</code>.</li>
+    <li><strong>Images :</strong> Ajouter une image avec la balise <code>&lt;img&gt;</code>. Exemple : <code>&lt;img src="image.jpg" alt="Description"&gt;</code>.</li>
+  </ul>
+
+  <h3>5. Concepts fondamentaux en CSS</h3>
+  <ul>
+    <li><strong>Sélecteurs :</strong> Les sélecteurs permettent de cibler les éléments à styliser. Exemple : <code>p { color: red; }</code>.</li>
+    <li><strong>Propriétés :</strong> Les propriétés définissent les styles à appliquer. Exemple : <code>color</code>, <code>font-size</code>, <code>margin</code>.</li>
+    <li><strong>Classes et ID :</strong> Permettent de styliser des éléments spécifiques.
+      <ul>
+        <li>Classe : <code>.ma-classe { color: blue; }</code></li>
+        <li>ID : <code>#mon-id { font-size: 20px; }</code></li>
+      </ul>
+    </li>
+  </ul>
+
+  <h3>6. Exemple combiné HTML & CSS</h3>
+  <p>Voici un exemple de page HTML stylisée avec du CSS intégré :</p>
+  <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;Exemple HTML & CSS&lt;/title&gt;
+    &lt;style&gt;
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+            color: #333;
+            padding: 20px;
+        }
+        h1 {
+            color: #4CAF50;
+            text-align: center;
+        }
+        p {
+            line-height: 1.6;
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Ma première page stylisée&lt;/h1&gt;
+    &lt;p&gt;Ceci est une démonstration de HTML et CSS ensemble.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+  </pre>
+
+  <h3>Conclusion</h3>
+  <p>
+    HTML et CSS sont les bases de la création de sites web. HTML définit la structure, tandis que CSS permet de styliser et de mettre en forme le contenu. 
+    Une bonne maîtrise de ces technologies est essentielle pour créer des sites professionnels et attractifs.
+  </p>
+</section>
+
+  <section id="merise">
+   
+    <h3>Méthode MERISE</h3>
+
+    <p>
+        La méthode MERISE est une méthode d'analyse et de conception utilisée pour créer des systèmes d'information structurés et cohérents. Elle permet de modéliser les données et les traitements nécessaires pour développer des projets complexes, comme des applications web ou des systèmes de gestion.
+    </p>
+
+    <p>
+        MERISE repose sur trois niveaux d’analyse :
+    </p>
+    <ul>
+        <li><strong>Niveau conceptuel :</strong> Décrit les données et les traitements sans prendre en compte les contraintes techniques. Par exemple, identifier les principales entités (utilisateurs, articles, commandes) et leurs relations.</li>
+        <li><strong>Niveau logique :</strong> Traduction des modèles conceptuels dans un format plus proche du fonctionnement des systèmes d’information, comme les bases de données relationnelles.</li>
+        <li><strong>Niveau physique :</strong> Concrétisation technique, incluant les choix de technologies, de langages de programmation et d’infrastructure (comme MySQL pour les bases de données).</li>
+    </ul>
+
+    <p>
+        Un des outils de MERISE est le <strong>modèle conceptuel des données (MCD)</strong>, qui permet de représenter les entités et leurs relations. Voici un exemple adapté au web :
+    </p>
+    <pre>
+Utilisateur (ID, Nom, Email, Mot_de_passe)
+Article (ID, Titre, Contenu, Date_publication)
+Commentaire (ID, Contenu, Date, ID_utilisateur, ID_article)
+
+Un utilisateur peut écrire plusieurs commentaires. Chaque commentaire est associé à un article.
+    </pre>
+
+    <p>
+        MERISE permet aussi de modéliser les traitements via le <strong>modèle conceptuel des traitements (MCT)</strong>. Par exemple, un processus de gestion de commentaires pourrait inclure les étapes suivantes :
+    </p>
+    <ol>
+        <li>Un utilisateur soumet un commentaire via un formulaire.</li>
+        <li>Le système vérifie que l’utilisateur est connecté.</li>
+        <li>Le commentaire est enregistré dans la base de données et lié à l’article correspondant.</li>
+        <li>Le commentaire est affiché sur la page de l’article.</li>
+    </ol>
+
+    <p>
+        En résumé, la méthode MERISE fournit une approche claire et structurée pour analyser, modéliser et développer un système d’information. Elle est particulièrement utile pour les développeurs souhaitant concevoir des applications complexes, comme des sites e-commerce, des systèmes de gestion de contenu ou des outils collaboratifs.
+    </p>
+</section>
+
+  <section id="mysql">
+    <h3>MySQL</h3>
+
+
+    <p>
+        MySQL est un système de gestion de bases de données relationnelles (SGBDR) open-source, largement utilisé pour gérer et stocker des données dans des applications web. Grâce à sa compatibilité avec des langages comme PHP, il est souvent choisi pour les sites e-commerce, blogs, et autres plateformes dynamiques.
+    </p>
+
+    <h3>1. Principes de base</h3>
+    <ul>
+        <li><strong>Base de données :</strong> Un conteneur pour organiser des données en tables.</li>
+        <li><strong>Table :</strong> Une structure composée de colonnes (champs) et de lignes (enregistrements).</li>
+        <li><strong>Requêtes :</strong> Commandes utilisées pour interagir avec la base (exemple : SELECT, INSERT, UPDATE, DELETE).</li>
+    </ul>
+
+    <h3>2. Exemple de base de données</h3>
+    <p>Voici un exemple d'une base de données simple pour un blog :</p>
+    <pre>
+Base de données : blog
+Tables :
+1. utilisateurs
+   - id (INT, PRIMARY KEY)
+   - nom (VARCHAR)
+   - email (VARCHAR)
+   - mot_de_passe (VARCHAR)
+2. articles
+   - id (INT, PRIMARY KEY)
+   - titre (VARCHAR)
+   - contenu (TEXT)
+   - date_publication (DATE)
+   - id_utilisateur (INT, FOREIGN KEY)
+3. commentaires
+   - id (INT, PRIMARY KEY)
+   - contenu (TEXT)
+   - date (DATETIME)
+   - id_article (INT, FOREIGN KEY)
+   - id_utilisateur (INT, FOREIGN KEY)
+    </pre>
+
+    <h3>3. Commandes SQL courantes</h3>
+    <p>Voici quelques commandes SQL utilisées dans MySQL :</p>
+    <pre>
+-- Créer une table
+CREATE TABLE utilisateurs (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nom VARCHAR(50),
+    email VARCHAR(100),
+    mot_de_passe VARCHAR(255)
+);
+
+-- Insérer des données
+INSERT INTO utilisateurs (nom, email, mot_de_passe) 
+VALUES ('Jean Dupont', 'jean.dupont@example.com', 'motdepasse123');
+
+-- Lire des données
+SELECT * FROM utilisateurs;
+
+-- Mettre à jour des données
+UPDATE utilisateurs
+SET email = 'nouveau.email@example.com'
+WHERE id = 1;
+
+-- Supprimer des données
+DELETE FROM utilisateurs WHERE id = 1;
+    </pre>
+
+    <h3>4. Pourquoi choisir MySQL ?</h3>
+    <ul>
+        <li><strong>Performance :</strong> Optimisé pour les requêtes rapides, même avec de grandes quantités de données.</li>
+        <li><strong>Fiabilité :</strong> Supporte des transactions sécurisées et des sauvegardes automatiques.</li>
+        <li><strong>Flexibilité :</strong> Compatible avec de nombreux langages et plateformes.</li>
+        <li><strong>Communauté active :</strong> De nombreuses ressources et extensions disponibles.</li>
+    </ul>
+
+    <h3>5. Intégration avec un site web</h3>
+    <p>
+        MySQL est souvent utilisé en tandem avec des langages comme PHP pour créer des applications web dynamiques. Voici un exemple d'extrait PHP simple pour se connecter à une base MySQL :
+    </p>
+    <pre>
+<?php
+$host = "localhost";
+$user = "root";
+$password = "";
+$database = "blog";
+
+$conn = new mysqli($host, $user, $password, $database);
+
+if ($conn->connect_error) {
+    die("Connexion échouée : " . $conn->connect_error);
+}
+echo "Connexion réussie !";
+?>
+    </pre>
+
+    <p>
+        En conclusion, MySQL est un choix incontournable pour gérer des bases de données relationnelles, grâce à sa simplicité, sa puissance et sa compatibilité avec les applications web modernes.
+    </p>
+</section>
+
+  <br>
+
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 École Insta. Tous droits réservés.</p>
+  </footer>
+</body>
+</html>

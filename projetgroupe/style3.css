@@ -1,0 +1,118 @@
+/* Structure globale */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #007acc; /* Fond bleu */
+    
+}
+
+/* Navigation */
+nav {
+    background: #333;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+}
+
+nav ul li a:hover {
+    background: #444;
+    border-radius: 5px;
+}
+
+/* Section principale */
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+h4,h1 {
+  text-align: center;
+}
+
+/
+
+/* Header */
+header {
+  text-align: center;
+  background-color: white;
+  padding: 20px;
+  border: 2px solid #333;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  margin: 0;
+  color: #333;
+}
+
+/* Section exercice */
+.exercise {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background: white;
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.solution {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #eef;
+  border: 1px solid #99c;
+  display: none;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #007bff;
+}
+
+
+
+/* Footer */
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    margin-top: auto; /* Maintient le footer en bas */
+    width: 100%;
+}
+
+

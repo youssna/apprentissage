@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercice Algo, C, CSS et PHP</title>
+  <link rel="stylesheet" href="style3.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.13/codemirror.min.css">
+</head>
+<body>
+  <!-- Barre de navigation -->
+  <nav>
+    <ul>
+      <li><a href="index.html">ACCUEIL</a></li>
+      <li><a href="cours.html">COURS</a></li>
+      <li><a href="exercice.html">EXERCICES</a></li>
+    </ul>
+  </nav>
+  <br>
+  <br>
+  <header>
+    <h1>Espace dédié aux exercices</h1>
+  </header>
+  <br>
+  <br>
+  <br>
+  <!-- Exercice Algorithme -->
+  <section class="exercise">
+    <h2>Exercice d'algorithme</h2>
+    <p>Écrire un algorithme qui demande un nombre à l'utilisateur et indique si ce nombre est pair ou impair.</p>
+    <div id="editor-algo"></div>
+    <button onclick="checkCodeAlgo()">Vérifier le code</button>
+    <button onclick="showSolutionAlgo()">Afficher la solution</button>
+    <div class="output" id="output-algo"></div>
+    <div class="solution" id="solution-algo" style="display: none;">
+      <pre>
+Début
+    Lire nombre
+    Si nombre mod 2 = 0 Alors
+        Afficher "Le nombre est pair"
+    Sinon
+        Afficher "Le nombre est impair"
+    FinSi
+Fin
+      </pre>
+    </div>
+  </section>
+
+  <!-- Exercice C -->
+  <section class="exercise">
+    <h2>Exercice en C</h2>
+    <p>Écrire un programme en C qui demande un nombre à l'utilisateur et affiche si ce nombre est positif, négatif ou nul.</p>
+    <div id="editor-c"></div>
+    <button onclick="checkCodeC()">Vérifier le code</button>
+    <button onclick="showSolutionC()">Afficher la solution</button>
+    <div class="output" id="output-c"></div>
+    <div class="solution" id="solution-c" style="display: none;">
+      <pre>
+#include <stdio.h>
+
+int main() {
+    int nombre;
+
+    printf("Entrez un nombre entier : ");
+    scanf("%d", &nombre);
+
+    if (nombre > 0) {
+        printf("Le nombre %d est positif.\n", nombre);
+    } else if (nombre < 0) {
+        printf("Le nombre %d est négatif.\n", nombre);
+    } else {
+        printf("Le nombre est nul.\n");
+    }
+
+    return 0;
+}
+      </pre>
+    </div>
+  </section>
+
+  <!-- Exercice CSS -->
+  <section class="exercise">
+    <h2>Exercice en CSS</h2>
+    <p>
+      Écrire un fichier CSS qui applique les styles suivants :
+      <ul>
+        <li>Une couleur de texte rouge pour les titres <code>h1</code>.</li>
+        <li>Un fond bleu clair pour tous les paragraphes (<code>p</code>).</li>
+        <li>Une bordure noire de 2 pixels et arrondie pour les éléments ayant la classe <code>.boite</code>.</li>
+      </ul>
+    </p>
+    <div id="editor-css"></div>
+    <button onclick="checkCodeCSS()">Vérifier le code</button>
+    <button onclick="showSolutionCSS()">Afficher la solution</button>
+    <div class="output" id="output-css"></div>
+    <div class="solution" id="solution-css" style="display: none;">
+      <pre>
+h1 {
+  color: red;
+}
+
+p {
+  background-color: lightblue;
+}
+
+.boite {
+  border: 2px solid black;
+  border-radius: 5px;
+}
+      </pre>
+    </div>
+  </section>
+
+  <!-- Exercice PHP -->
+  <section class="exercise">
+    <h2>Exercice en PHP</h2>
+    <p>Écrire un script PHP qui demande à l'utilisateur son âge et affiche s'il est mineur ou majeur.</p>
+    <div id="editor-php"></div>
+    <button onclick="checkCodePHP()">Vérifier le code</button>
+    <button onclick="showSolutionPHP()">Afficher la solution</button>
+    <div class="output" id="output-php"></div>
+    <div class="solution" id="solution-php" style="display: none;">
+      <pre>
+<?php
+echo "Entrez votre âge : ";
+$age = (int)readline();
+
+if ($age >= 18) {
+    echo "Vous êtes majeur.\n";
+} else {
+    echo "Vous êtes mineur.\n";
+}
+?>
+      </pre>
+    </div>
+  </section>
+
+  <!-- Exercice Merise -->
+  <section class="exercise">
+    <h2>Exercice Merise</h2>
+    <p>Créer un diagramme entité-association (EA) pour une bibliothèque où l'entité <strong>Livres</strong> est liée à l'entité <strong>Auteur</strong>.</p>
+    <div id="editor-merise"></div>
+    <button onclick="checkCodeMerise()">Vérifier la solution</button>
+    <button onclick="showSolutionMerise()">Afficher la solution</button>
+    <div class="output" id="output-merise"></div>
+    <div class="solution" id="solution-merise" style="display: none;">
+      <pre>
+Entité "Livres" :
+    Attributs : ID_Livre, Titre, Genre
+    Relation avec "Auteur" : Plusieurs livres peuvent avoir un auteur
+
+Entité "Auteur" :
+    Attributs : ID_Auteur, Nom, Prénom, Date_Naissance
+      </pre>
+    </div>
+  </section>
+
+  <!-- Exercice MySQL -->
+<section class="exercise">
+  <h2>Exercice en MySQL</h2>
+  <p>Écrire une requête SQL qui récupère le nom, prénom et âge de tous les étudiants dont l'âge est supérieur à 18 ans dans une base de données appelée <strong>etudiants</strong>, qui contient une table <strong>students</strong> avec les colonnes : <strong>id</strong>, <strong>nom</strong>, <strong>prenom</strong>, <strong>age</strong>.</p>
+  
+  <div id="editor-mysql"></div>
+  <button onclick="checkCodeMySQL()">Vérifier la requête</button>
+  <button onclick="showSolutionMySQL()">Afficher la solution</button>
+  <div class="output" id="output-mysql"></div>
+  <div class="solution" id="solution-mysql" style="display: none;">
+    <pre>
+SELECT nom, prenom, age
+FROM etudiants
+WHERE age > 18;
+    </pre>
+  </div>
+</section>
+
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.13/codemirror.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.13/mode/clike/clike.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.13/mode/javascript/javascript.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.13/mode/css/css.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.13/mode/php/php.min.js"></script>
+  <script>
+    function normalizeCode(code) {
+      return code.replace(/\s+/g, ' ').replace(/^\s+|\s+$/g, '').trim();
+    }
+
+const editors = {
+  algo: CodeMirror(document.getElementById("editor-algo"), { mode: "javascript", lineNumbers: true }),
+  c: CodeMirror(document.getElementById("editor-c"), { mode: "text/x-csrc", lineNumbers: true }),
+  css: CodeMirror(document.getElementById("editor-css"), { mode: "css", lineNumbers: true }),
+  php: CodeMirror(document.getElementById("editor-php"), { mode: "text/x-php", lineNumbers: true }),
+  merise: CodeMirror(document.getElementById("editor-merise"), { mode: "text/plain", lineNumbers: true }),
+  mysql: CodeMirror(document.getElementById("editor-mysql"), { mode: "text/x-mysql", lineNumbers: true }), // Correction ici
+};
+
+    const expected = {
+      algo: `Début Lire nombre Si nombre mod 2 = 0 Alors Afficher "Le nombre est pair" Sinon Afficher "Le nombre est impair" FinSi Fin`,
+      c: `#include <stdio.h> int main() { int nombre; printf("Entrez un nombre entier : "); scanf("%d", &nombre); if (nombre > 0) { printf("Le nombre %d est positif.\\n", nombre); } else if (nombre < 0) { printf("Le nombre %d est négatif.\\n", nombre); } else { printf("Le nombre est nul.\\n"); } return 0; }`,
+      css: `h1 { color: red; } p { background-color: lightblue; } .boite { border: 2px solid black; border-radius: 5px; }`,
+      php: `<?php
+echo "Entrez votre âge : ";
+$age = (int)readline();
+if ($age >= 18) {
+    echo "Vous êtes majeur.\n";
+} else {
+    echo "Vous êtes mineur.\n";
+}
+?>`,
+      merise: `Entité "Livres" : Attributs : ID_Livre, Titre, Genre Relation avec "Auteur" : Plusieurs livres peuvent avoir un auteur Entité "Auteur" : Attributs : ID_Auteur, Nom, Prénom, Date_Naissance`,
+      mysql:`SELECT nom, prenom, age
+FROM etudiants
+WHERE age > 18;`
+
+    };
+
+    function checkCode(type) {
+      const userCode = normalizeCode(editors[type].getValue());
+      const expectedCode = normalizeCode(expected[type]);
+      const outputDiv = document.getElementById(`output-${type}`);
+
+      if (userCode === expectedCode) {
+        outputDiv.innerHTML = `<strong style="color: green;">Bonne réponse 🎉</strong>`;
+      } else {
+        outputDiv.innerHTML = `<strong style="color: red;">Mauvaise réponse ❌</strong>`;
+      }
+    }
+
+    function showSolution(type) {
+      document.getElementById(`solution-${type}`).style.display = "block";
+    }
+
+    window.checkCodeAlgo = () => checkCode("algo");
+    window.checkCodeC = () => checkCode("c");
+    window.checkCodeCSS = () => checkCode("css");
+    window.checkCodePHP = () => checkCode("php");
+    window.checkCodeMerise = () => checkCode("merise");
+    window.checkCodeMySQL = () => checkCode("mysql");
+
+    window.showSolutionMerise = () =>showSolution("merise") 
+    window.showSolutionAlgo = () => showSolution("algo");
+    window.showSolutionC = () => showSolution("c");
+    window.showSolutionCSS = () => showSolution("css");
+    window.showSolutionPHP = () => showSolution("php");
+    window.showSolutionMySQL = () => showSolution("mysql");
+  </script>
+</body>
+</html>

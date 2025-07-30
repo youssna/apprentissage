@@ -1,0 +1,160 @@
+/* Structure globale */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #007acc; /* Fond bleu */
+
+}
+
+/* Navigation */
+nav {
+    background: #333;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+}
+
+nav ul li a:hover {
+    background: #444;
+    border-radius: 5px;
+}
+
+/* Section principale */
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Message de bienvenue */
+.welcome-message h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.welcome-message p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    color: white;
+}
+
+/* Photo centrale */
+.image-container {
+    margin-top: 20px;
+}
+
+/* Photo centrale */
+.photo-centrale {
+    max-width: 180%; /* Agrandissement de la taille */
+    height: 200px; /* Conserve les proportions */
+    border-radius: 50px; /* Bordures arrondies */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Ombre pour l'esthétique */
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    margin-top: auto; /* Maintient le footer en bas */
+    width: 100%;
+}
+body {  
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #007acc; /* Fond bleu */
+}
+
+
+/* Centrer le paragraphe */
+p, h2{
+    text-align: center; /* Centre le texte horizontalement */
+    
+}
+
+/* Style pour la vidéo en icône moyenne */
+.video-icone {
+    display: flex; /* Permet de centrer avec margin auto */
+    margin: 50px auto; /* Centre horizontalement et ajoute de l'espacement */
+    width: 500px; /* Taille moyenne */
+    height: auto; /* Préserve les proportions */
+    border-radius: 8px; /* Coins arrondis pour un style élégant */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ombre pour un effet légèrement surélevé */
+}
+
+/* Conteneur pour centrer la card */
+.card-container {
+    display: flex;
+    justify-content: center; /* Centre les cartes horizontalement */
+    align-items: stretch; /* Assure que les cartes ont une hauteur uniforme */
+    flex-wrap: wrap; /* Permet aux cartes de passer à la ligne si nécessaire */
+    gap: 20px; /* Espace entre les cartes */
+    margin: 20px; /* Espacement autour du conteneur */
+}
+/* Style de la card */
+.card {
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 20px; /* Ajustement du padding interne */
+    text-align: center;
+    width: 250px; /* Largeur plus réaliste pour les cartes */
+    height: auto; /* Retirer la hauteur fixe pour permettre un contenu dynamique */
+}
+
+.card .card-img-top {
+    width: 170px; /* Largeur fixe pour l'image */
+    height: 200px; /* Hauteur fixe */
+    gap : 50px;
+    border-radius: 50%; /* Cercle pour un effet élégant */
+    margin: 0 auto; /* Centre l'image horizontalement */
+    display: block; /* Centre l'image en tant qu'élément */
+}
+/* Bouton de la card */
+.card .btn {
+    margin-top: 10px;
+    background-color: #007bff; /* Couleur principale */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.card .btn:hover {
+    background-color: #0056b3; /* Couleur au survol */
+}
+
+
