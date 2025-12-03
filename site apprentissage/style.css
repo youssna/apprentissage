@@ -1,0 +1,322 @@
+/* --- RESET & GLOBAL --- */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f3f4f6;
+    color: #1f2937;
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    font-family: 'Poppins', sans-serif;
+    color: #111827;
+    margin-top: 0;
+}
+
+/* --- NAVIGATION --- */
+nav {
+    background: white;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    padding: 0 20px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 15px 0;
+    gap: 40px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #4b5563;
+    font-weight: 600;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #007acc;
+}
+
+/* --- HERO HEADER --- */
+.welcome-message {
+    background: linear-gradient(135deg, #007acc 0%, #005f9e 100%);
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+    margin-bottom: 40px;
+}
+
+.welcome-message h1 {
+    color: white;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.welcome-message p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* --- CONTENEUR --- */
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* --- IMAGES --- */
+.image-container {
+    display: flex;
+    justify-content: center;
+    margin-top: -60px;
+    margin-bottom: 40px;
+}
+
+.photo-centrale {
+    max-width: 100%;
+    height: 400px;
+    width: 800px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+    border: 4px solid white;
+    background-color: white;
+}
+
+/* --- SECTIONS ACCUEIL (Nouvelles Classes) --- */
+.presentation {
+    max-width: 800px; 
+    margin: 0 auto 40px auto; 
+    text-align: center;
+}
+
+.highlights {
+    max-width: 900px; 
+    margin: 0 auto 50px auto;
+}
+
+.highlights h2 {
+    text-align: center; 
+    margin-bottom: 30px;
+}
+
+.highlights-list {
+    list-style: none; 
+    padding: 0; 
+    max-width: 700px; 
+    margin: 0 auto;
+}
+
+.highlights-list li {
+    margin-bottom: 20px; 
+    padding-left: 20px; 
+    border-left: 4px solid #007acc;
+}
+
+.highlights-list li.last-item {
+    margin-bottom: 10px;
+}
+
+.section-title {
+    text-align: center;
+}
+
+/* --- CARTES (CARDS) --- */
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    border: 1px solid #e5e7eb;
+}
+
+.card-center {
+    text-align: center;
+}
+
+.card-icon {
+    font-size: 3em; 
+    margin-bottom: 15px;
+}
+
+.text-muted {
+    font-size: 0.9em; 
+    color: #666;
+}
+
+/* --- LIEN OFFICIEL --- */
+.official-link {
+    text-align: center; 
+    margin-top: 50px; 
+    margin-bottom: 40px;
+}
+
+.official-link a {
+    color: #007acc; 
+    font-weight: bold; 
+    text-decoration: none;
+}
+
+/* --- FOOTER --- */
+footer {
+    margin-top: auto;
+    background: #f3f4f6;
+    border-top: 1px solid #e5e7eb;
+}
+
+footer p {
+    text-align: center; 
+    padding: 20px; 
+    color: #666; 
+    margin: 0;
+}
+
+/* --- CLASSES POUR LA PAGE COURS --- */
+.course-layout {
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.course-sidebar {
+    background: white;
+    width: 260px;
+    padding: 20px;
+    border-radius: 12px;
+    position: sticky;
+    top: 90px;
+    flex-shrink: 0;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.course-sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.course-sidebar li a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #4b5563;
+    border-radius: 6px;
+}
+
+.course-sidebar li a:hover {
+    background-color: #f0f9ff;
+    color: #007acc;
+}
+
+.course-content {
+    flex: 1;
+}
+
+.course-card {
+    margin-bottom: 30px;
+    scroll-margin-top: 100px;
+}
+
+pre {
+    background: #1e1e1e;
+    color: #d4d4d4;
+    padding: 20px;
+    border-radius: 8px;
+    overflow-x: auto;
+    font-family: monospace;
+}
+
+/* Partie Merise */
+.course-list {
+    padding-left: 20px;
+    margin-bottom: 20px;
+    line-height: 1.8;
+}
+
+.merise-schema {
+    background: #f8f9fa;
+    border: 2px solid #e9ecef;
+    border-radius: 8px;
+    padding: 30px 20px;
+    text-align: center;
+    font-family: 'Courier New', monospace;
+    margin: 20px 0;
+}
+
+.merise-entity {
+    border: 2px solid #007acc;
+    padding: 8px 15px;
+    border-radius: 4px;
+    color: #007acc;
+    font-weight: bold;
+    background: white;
+    display: inline-block;
+}
+
+.merise-cardinality {
+    margin: 0 10px;
+    font-weight: bold;
+    color: #333;
+}
+
+.merise-legend {
+    margin-top: 20px;
+    text-align: left;
+    font-size: 0.9em;
+    color: #555;
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #eee;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.code-note {
+    background: #1e1e1e;
+    color: #d4d4d4;
+    padding: 20px;
+    border-radius: 8px;
+    font-family: monospace;
+    font-size: 0.95em;
+    border-left: 5px solid #007acc;
+    margin-top: 20px;
+}
+
+/* --- MOBILE --- */
+@media (max-width: 800px) {
+    .course-layout {
+        flex-direction: column;
+    }
+    .course-sidebar {
+        width: 100%;
+        position: static;
+        margin-bottom: 20px;
+    }
+    .photo-centrale {
+        width: 100%;
+        height: auto;
+    }
+}

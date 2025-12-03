@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CFA Insta - Cours</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">ACCUEIL</a></li>
+      <li><a href="cours.html">COURS</a></li>
+    </ul>
+  </nav>
+
+  <div class="welcome-message">
+      <h1>Espace d'Apprentissage</h1>
+      <p>Documentation technique et ressources de cours.</p>
+  </div>
+
+  <div class="container">
+      
+      <div class="course-layout">
+        
+        <aside class="course-sidebar">
+          <h3>Sommaire</h3>
+          <ul>
+            <li><a href="#algorithme">1. Algorithme</a></li>
+            <li><a href="#langage-c">2. Langage C</a></li>
+            <li><a href="#php">3. PHP & Web</a></li>
+            <li><a href="#html-css">4. HTML & CSS</a></li>
+            <li><a href="#merise">5. Méthode Merise</a></li>
+            <li><a href="#mysql">6. MySQL</a></li>
+          </ul>
+        </aside>
+
+        <div class="course-content">
+            
+            <section id="algorithme" class="course-card">
+                <h2>1. Algorithme</h2>
+                <p>
+                  Un algorithme est une suite finie d’instructions précises permettant de résoudre un problème. 
+                  C'est la "recette de cuisine" du programmeur avant même de toucher au code.
+                </p>
+
+                <h3>Les structures de base</h3>
+                
+                <h4>1. La Séquence</h4>
+                <p>Exécution linéaire d’instructions.</p>
+                <pre>
+Début
+   Lire A, B
+   Somme ← A + B
+   Afficher Somme
+Fin</pre>
+
+                <h4>2. La Condition (Si…Alors)</h4>
+                <pre>
+Début
+   Lire N
+   Si N mod 2 = 0 Alors
+      Afficher "Pair"
+   Sinon
+      Afficher "Impair"
+   Fin Si
+Fin</pre>
+
+                <h4>3. La Boucle (Répétition)</h4>
+                <pre>
+Début
+   Pour i de 1 à 10 Faire
+      Afficher i
+   Fin Pour
+Fin</pre>
+            </section>
+
+            <section id="langage-c" class="course-card">
+                <h2>2. Langage C</h2>
+                <p>
+                  Créé en 1972, le C est un langage bas niveau puissant, utilisé pour les systèmes d'exploitation et l'embarqué. 
+                  Il permet un contrôle total de la mémoire.
+                </p>
+
+                <h3>Exemple : Structure d'un programme</h3>
+                <pre>
+#include &lt;stdio.h&gt;
+
+int main() {
+    int a = 5;
+    int b = 10;
+    int somme = a + b;
+
+    printf("La somme est : %d\n", somme);
+    return 0;
+}</pre>
+
+                <h3>Pourquoi apprendre le C ?</h3>
+                <ul class="course-list">
+                   <li>Comprendre comment fonctionne la mémoire (RAM).</li>
+                   <li>Base syntaxique de nombreux langages (C++, Java, PHP, JS).</li>
+                   <li>Performance d'exécution inégalée.</li>
+                </ul>
+            </section>
+
+            <section id="php" class="course-card">
+                <h2>3. Langage PHP</h2>
+                <p>
+                  PHP (Hypertext Preprocessor) est le langage roi du web dynamique côté serveur. 
+                  Il permet de générer du HTML, traiter des formulaires et dialoguer avec des bases de données.
+                </p>
+
+                <h3>Exemple : Script de bienvenue</h3>
+                <pre>
+&lt;?php
+    $nom = "Alice";
+    $heure = 14;
+
+    if ($heure &lt; 18) {
+        echo "Bonjour " . $nom;
+    } else {
+        echo "Bonsoir " . $nom;
+    }
+?&gt;</pre>
+            </section>
+
+            <section id="html-css" class="course-card">
+                <h2>4. HTML & CSS</h2>
+                <p>Le duo incontournable du web : le HTML crée le squelette, le CSS l'habille.</p>
+
+                <h3>HTML (Structure)</h3>
+                <pre>
+&lt;div class="boite"&gt;
+    &lt;h1&gt;Titre&lt;/h1&gt;
+    &lt;p&gt;Mon texte.&lt;/p&gt;
+&lt;/div&gt;</pre>
+
+                <h3>CSS (Style)</h3>
+                <pre>
+.boite {
+    background: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+}
+h1 {
+    color: blue;
+}</pre>
+            </section>
+
+            <section id="merise" class="course-card">
+                <h2>5. Méthode Merise</h2>
+                <p>
+                    Avant de se lancer dans le code ou la création de tables SQL, il est impératif de réfléchir à la structure des données. 
+                    <strong>Merise</strong> est une méthode d'analyse et de conception qui permet de modéliser un système d'information.
+                </p>
+
+                <h3>1. Le concept clé : Le MCD</h3>
+                <p>
+                    Le <strong>Modèle Conceptuel de Données (MCD)</strong> est un schéma qui représente les objets de votre système et les liens entre eux.
+                </p>
+                
+                <ul class="course-list">
+                    <li><strong>L'Entité (Rectangle) :</strong> Un objet concret (Ex: <em>Client, Produit</em>).</li>
+                    <li><strong>L'Association (Ovale) :</strong> Un verbe qui lie les entités (Ex: <em>Acheter</em>).</li>
+                    <li><strong>Les Propriétés :</strong> Les informations de l'entité (Ex: <em>Nom, Prix</em>).</li>
+                </ul>
+
+                <h3>2. Les Cardinalités (Les règles du jeu)</h3>
+                <p>
+                    C'est ce qui définit les quantités minimum et maximum dans une relation (0,1 - 1,1 - 0,n - 1,n).
+                </p>
+                
+                <div class="merise-schema">
+                    <span class="merise-entity">AUTEUR</span>
+                    <span class="merise-cardinality">0,n</span>
+                    --------- ( Écrire ) ---------
+                    <span class="merise-cardinality">1,1</span>
+                    <span class="merise-entity">LIVRE</span>
+                    
+                    <div class="merise-legend">
+                        <strong>Lecture :</strong><br>
+                        • Un AUTEUR peut écrire plusieurs (n) LIVRES.<br>
+                        • Un LIVRE est écrit par un seul (1) AUTEUR.
+                    </div>
+                </div>
+
+                <h3>3. Du Schéma à la Base de Données</h3>
+                <p>
+                    Une fois le dessin (MCD) terminé, on le traduit en tableaux logiques (MLD).
+                </p>
+                
+                <div class="code-note">
+                    <strong>Règle de transformation :</strong><br>
+                    Si j'ai une relation (1,n), je prends l'identifiant de l'entité forte et je le mets comme <em>Clé Étrangère</em> dans l'entité faible.
+                    <br><br>
+                    => Table <strong>LIVRE</strong> (id_livre, titre, #id_auteur)
+                </div>
+            </section>
+
+            <section id="mysql" class="course-card">
+                <h2>6. MySQL</h2>
+                <p>
+                    MySQL est le SGBD relationnel le plus utilisé pour le web.
+                </p>
+
+                <h3>Les commandes essentielles (CRUD)</h3>
+                
+                <p><strong>1. CREATE (Créer)</strong></p>
+                <pre>
+CREATE TABLE utilisateurs (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    nom VARCHAR(50),
+    email VARCHAR(100)
+);</pre>
+
+                <p><strong>2. SELECT (Lire)</strong></p>
+                <pre>
+SELECT * FROM utilisateurs WHERE id = 1;</pre>
+
+                <p><strong>3. INSERT (Ajouter)</strong></p>
+                <pre>
+INSERT INTO utilisateurs (nom, email) 
+VALUES ('Jean', 'jean@gmail.com');</pre>
+            </section>
+
+        </div>
+      </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 École Insta. Tous droits réservés.</p>
+  </footer>
+
+</body>
+</html>
